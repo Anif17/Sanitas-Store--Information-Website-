@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanitas Store</title>
+    <link rel="icon" href="images/logoWebsite.ico">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+        /*FOR ALL*/
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        h3 {
+            font-size: 25px;
+        }
+
+        /*END ALL*/
+
+        /*FOR NAVIGATION*/
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 80px;
+            background: #fbeaff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            left: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navbar li {
+            list-style: none;
+            padding: 0 25px;
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.5s ease;
+        }
+
+        #navbar li a:hover {
+            color: #845ec2;
+        }
+
+        .logo {
+            width: 180px;
+            height: 70px;
+        }
+
+        /*END NAVIGATION*/
+
+        /*OR CLASS IMAGE-BRAND*/
+        .image-brand {
+            width: 180px;
+            height: auto;
+        }
+
+        /*END CLASS IMAGE-BRAND*/
+
+        /*FOR SPACING*/
+        .space {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        /*END SPACING*/
+
+        /*FOR BUTTON*/
+        button {
+            background-color: #af9acd;
+            border-radius: 10px;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        /*END BUTTON*/
+
+        /*FOR TABLE*/
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        th {
+            background-color: #b39cd0;
+            color: white;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+        }
+
+        /*END TABLE*/
+
+        /*FOR CLASS NAV-ITEM*/
+        .nav-items {
+            padding-left: 50px;
+            padding-right: 50px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.5s ease;
+        }
+
+        /*END CLASS NAV-ITEM*/
+
+        /*FOR FOOTER*/
+        footer {
+            text-align: center;
+            padding: 3px;
+            background-color: #d9d0e6;
+        }
+
+        /*END FOOTER*/
+    </style>
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div>
+        <center>
+            <table style="color: black;">
+                <th><a href="#loreal" class="nav-items">Loreal</a></th>
+                <th><a href="#blackmore" class="nav-items">Blackmore</a></th>
+                <th><a href="#lacura" class="nav-items">Lacura</a></th>
+                <th><a href="#biore" class="nav-items">Biore</a></th>
+                <th><a href="#biolife" class="nav-items">Bio-life</a></th>
+                <th><a href="#scott" class="nav-items">Scott</a></th>
+                <th><a href="#wardah" class="nav-items">Wardah</a></th>
+                <th><a href="#aurawhite" class="nav-items">Aura White</a></th>
+            </table>
+            <br>
+        </center>
+    </div>
+
+    <div style="padding-top: 10px; padding-left: 20px;">
+
+        <h2 class="space" style="color: #452769;">About Product :</h2>
+
+        <h3 id="biore" style="padding-top: 20px;">
+            <a href="https://www.kao.com/my/products/biore/" target="_blank" style="text-decoration: none;">BIORE'</a>
+        </h3>
+
+        <table class="space">
+            <tr>
+                <td><img src="brand/biore brand.png"></td>
+                <td>As Japan’s No.1 skincare brand, Biore has spent decades perfecting protective solutions with multi
+                    benefitsthat can be used in just a few simple steps, so you can achieve skin that’s radiantly
+                    beautiful. With Biore, you can now experience the joy that naturally beautiful skin brings every
+                    day. We are a passionate tribe of pore obsessed risk takers and trailblazers. We proudly create
+                    products that uniquely care for pores with proof you can see & feel. Today, Bioré is a pore
+                    focused--or more like a pore obsessed-- face care brand in the US that continues the mission to make
+                    high quality, affordable skincare products that provide a variety of skincare benefits. Even though
+                    we create our own line of products in the US, we approach all of our product development with a
+                    Japanese Beauty Philosophy and are able to leverage our parent company’s amazing Japanese
+                    technology. These technologies are backed by years of research and development.</td>
+            </tr>
+        </table>
+
+        <table class="space">
+            <tr>
+                <td><img src="picture/story1.png" style="width: 450px;"></td>
+                <td><img src="picture/story2.png" style="width: 450px;"></td>
+                <td><img src="picture/story3.png" style="width: 450px;"></td>
+            </tr>
+        </table>
+
+        <br>
+        <h3 style="text-align: center;">Advertisment BIORE'</h3>
+
+        <div class="space" align="center">
+            <video width="50%" height="480" controls>
+                <source src="biore video/biore promote 1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="space" align="center">
+            <video width="50%" height="480" controls>
+                <source src="biore video/biore promote 2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <h3 style="text-align: center;">Feedback BIORE'</h3>
+
+        <div class="space" align="center">
+            <video width="50%" height="480" controls>
+                <source src="biore video/biore vid feedback.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <h3 style="text-align: center;">For more information:</h3>
+        <div align="center">
+            <button>
+                <p>
+                <p><a href="https://www.kao.com/my/products/biore/" target="_blank" style="font-size: 20px;">Go to Biore
+                        Official Website</a></p>
+                </p>
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+
+    <div style="padding-top: 40px; padding-left: 20px;">
+        <h3 id="biolife" style="padding-top: 20px;">
+            <a href="https://biolife.com.my/" target="_blank" style="text-decoration: none;">BiO-LiFE</a>
+        </h3>
+
+        <table class="space">
+            <tr>
+                <td><img src="brand/Bio-life brand.png" style="width: 300px;"></td>
+                <td>BiO-LiFE Marketing is a healthcare company engaged in wellness with 30 years of existence in
+                    Malaysia. It has an able team of Nutritionists, Biochemists, Food technologists and Microbiologists
+                    that help bring relevant products to consumers. BiO-LiFE Marketing became a part of Mega
+                    Lifesciences since its acquisition in Nov 2016. Mega Lifesciences is a leading pharmaceutical and
+                    nutraceutical company headquartered in Bangkok and publicly listed since 2014. Mega is actively
+                    involved in helping millions of people have access to safe, effective, world class quality
+                    nutritional & herbal supplements, OTC and ethical products. Established in 1982, Mega Lifesciences
+                    is engaged in manufacturing, marketing, selling and distributing Medicines through its own offices
+                    and also through and extensive distributor network. Its world class manufacturing standards is
+                    backed by approvals from Thailand FDA, Australia TGA & German GMP. We believe that “Prevention is
+                    The Best Medicine” and based on this belief that we have formulated and developed a range of
+                    nutritional supplements and herbal remedies for the well-being of customers.</td>
+            </tr>
+        </table>
+
+        <div class="space">
+            <h3>Mission</h3>
+            <br>
+            <p>We are committed to providing a comprehensive range of quality and safe health products based on
+                scientific evidence that surpass the standards set by the health authorities. We, as a customer-oriented
+                company, continuously seek to empower people with reliable and accurate information to help them take
+                charge of their health. “My belief is that our journey to good health starts with ourselves. Health is
+                the greatest wealth anyone can have, and I am proud in helping people stay healthy as long as they
+                live.”</p>
+            <br>
+            <h3>Vision</h3>
+            <br>
+            <ul>
+                <li>Create Owners of good health and Improve lives of people around us.</li>
+                <li>Educate and empower the consumer with vital knowledge about health and well-being.</li>
+                <li>Build a thinking organization that will change before it is forced to and live and grow beyond each
+                    one of us.</li>
+                <li>Provide Quality Products and Services to our Customers through Constant Improvement and Innovation.
+                </li>
+                <li>Create value by Marketing and Selling Medicines in Developing Countries.</li>
+            </ul>
+        </div>
+
+        <h3 style="text-align: center;">For more information:</h3>
+        <div align="center">
+            <button>
+                <p>
+                <p><a href="https://biolife.com.my/" target="_blank" style="font-size: 20px;">Go to Bio-life Official
+                        Website</a></p>
+                </p>
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+
+    <div style="padding-top: 40px; padding-left: 20px;">
+        <h3 id="lacura" style="padding-top: 20px;">
+            <a href="https://www.lacuramor.com/" target="_blank" style="text-decoration: none;">LACURA</a>
+        </h3>
+
+        <table class="space">
+            <tr>
+                <td><img src="brand/Lacura Brand.jpg" style="width: 300px;"></td>
+                <td>Liat is the co-founder of LaCura which is where a collection of essential oil blends are blended and
+                    sold that she created, after researching the effects of the compounds in each and every oil, and how
+                    it affects the body physically and emotionally. Today, Liat and the LaCura experts, with a
+                    collective of 20+ years in the health industry, devote their time to helping educate and inspire
+                    people to take back and rebalance their health by incorporating the simple, potent practice of
+                    essential oils into their lives. LaCura sources their ingredients from only certified, pure,
+                    organic, therapeutic grade - high quality plants, without contaminants. Every product and mixture is
+                    evaluated for the right potency and the optimal combination between the oil based on EBR (evidence
+                    based research).</td>
+            </tr>
+        </table>
+
+        <div class="space">
+            <h3>Mission</h3>
+            <br>
+            <p>“In order for the oils to be therapeutic, they need to be pure, high quality, for maximum potency.” OIls
+                that are not top quality give essential oils a bad reputation for healing, and we pride ourselves in top
+                quality. Our mission is to improve your wellbeing and support the body's innate ability to heal itself
+                using essential oils from nature.</p>
+            <br>
+            <h3>Why LaCura?</h3>
+            <br>
+            <p>Before you buy essential oils, you need to know that not all oils are created equal. Typically,
+                high-quality essential oils go through rigorous testing to ensure the product is safe to use. Not all
+                companies use thorough testing methods, and many essential oil distributors will use synthetic fillers
+                that alter the efficacy of the oils. LaCura uses pure essential oils without contaminants. The oils are
+                certified pure therapeutic grade, using high quality plants. Every product and mixture is evaluated for
+                the right potency and the optimal combination between the oil based on EBR (evidence based research).
+            </p>
+            <br>
+        </div>
+
+        <h3 style="text-align: center;">For more information:</h3>
+        <div align="center">
+            <button>
+                <p>
+                <p><a href="https://www.lacuramor.com/" target="_blank" style="font-size: 20px;">Go to Lacura Official
+                        Website</a></p>
+                </p>
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+
+    <div style="padding-top: 40px; padding-left: 20px;">
+        <h3 id="loreal" style="padding-top: 20px;">
+            <a href="https://www.loreal.com/en/malaysia/" target="_blank" style="text-decoration: none;">LOREAL</a>
+        </h3>
+
+        <table class="space">
+            <tr>
+                <td><img src="brand/loreal Brand.png" style="width: 300px;"></td>
+                <td>L’Oréal Paris is the world’s leading cosmetics brand, making the best of luxury beauty available and
+                    accessible to everyone. From makeup and skincare to hair care and hair colour, our pioneering spirit
+                    leads our scientific excellence and restless innovation. We have been committed to safety, efficacy
+                    and quality for more than 110 years. As a brand which has always championed and celebrated women’s
+                    empowerment, L’Oréal Paris challenges stereotypes with a modern vision of femininity. Indeed, we
+                    support all women on their journey to fulfil themselves according to their own rules and desires.
+                </td>
+            </tr>
+        </table>
+
+        <div class="space">
+            <h3>Mission</h3>
+            <br>
+            <p>Our goal is to offer each and every person around the world the best of beauty in terms of quality,
+                efficacy, safety, sincerity and responsibility to satisfy all beauty needs and desires in their infinite
+                diversity.</p>
+            <br>
+            <h3>Vision</h3>
+            <br>
+            <ul>
+                <li>We act to shape the future of beauty by leveraging the best of science and technology, increasingly
+                    inspired by nature.</li>
+                <li>We act to drive social innovation by offering the best working conditions, training, and social
+                    protection for our employees.</li>
+                <li>We act to build a business with inclusivity at its heart by ensuring we are as diverse as the people
+                    we serve.</li>
+                <li>We act to nurture lasting partnerships with our clients and suppliers based on mutual trust and
+                    collaboration.</li>
+                <li>We act to protect the beauty of the planet by fighting climate change, respecting biodiversity and
+                    preserving natural resources.</li>
+            </ul>
+        </div>
+        <br>
+        <h3 style="text-align: center;">Advertisment L’Oréal</h3>
+
+        <div class="space" align="center">
+            <video width="50%" height="480" controls>
+                <source src="loreal video/L'Oréal Paris ad 1.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="space" align="center">
+            <video width="50%" height="480" controls>
+                <source src="loreal video/L'Oréal Paris ad 2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <h3 style="text-align: center;">Feedback L’Oréal</h3>
+
+        <div class="space" align="center">
+            <video width="50%" height="480" controls>
+                <source src="loreal video/L'Oreal Testimonials.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <h3 style="text-align: center;">For more information:</h3>
+        <div align="center">
+            <button>
+                <p>
+                <p><a href="https://www.loreal.com/en/malaysia/" target="_blank" style="font-size: 20px;">Go to Loreal
+                        Official Website</a></p>
+                </p>
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+
+    <div style="padding-top: 40px; padding-left: 20px;">
+        <h3 id="wardah" style="padding-top: 20px;">
+            <a href="https://www.wardahbeauty.com/" target="_blank" style="text-decoration: none;">Wardah</a>
+        </h3>
+
+        <table class="space">
+            <tr>
+                <td><img src="brand/Wardah Brand.png" style="width: 300px;"></td>
+                <td>Wardah is a beauty brand that cares and understands the wish of every women to always feel calm and
+                    comfortable with their look. Wardah Cosmetics or Wardah is a brand of beauty products (cosmetics)
+                    produced by one of the largest cosmetic manufacturing companies in Indonesia, created by Nurhayati
+                    Subakat, PT Paragon Technology and Innovation. Wardah was introduced in 1995. Four years later, this
+                    brand received a halal certificate from LPPOM MUI, which made it the pioneer of halal beauty product
+                    brands in Indonesia. The products produced under the Wardah brand consist of four categories, namely
+                    skin care products, especially for the face (skincare), body care (bodycare), hair care (haircare),
+                    and make-up. Wardah skin care products include toner, serum, facial cleanser, facial soap,
+                    moisturizer, micellar, facial mask, facial scrub, face cream, eye cream, and essence.</td>
+            </tr>
+        </table>
+        <br>
+        <h3 style="text-align: center;">Advertisment WARDAH</h3>
+
+        <div class="space" align="center">
+            <video width="50%" height="480" controls>
+                <source src="wardah advertise/Wardah ad.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+        <h3 style="text-align: center;">Radio Advertisment WARDAH</h3>
+
+        <div class="space" align="center">
+            <audio controls>
+                <source src="wardah advertise/Wardah radio ad.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <h3 style="text-align: center;">For more information:</h3>
+        <div align="center">
+            <button>
+                <p>
+                <p><a href="https://www.wardahbeauty.com/" target="_blank" style="font-size: 20px;">Go to Wardah
+                        Official Website</a></p>
+                </p>
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <hr>
+
+    <div style="padding-top: 40px; padding-left: 20px;">
+        <h3 id="aurawhite" style="padding-top: 20px;">
+            <a href="https://aurawhite2u.com/" target="_blank" style="text-decoration: none;">AuraWhite</a>
+        </h3>
+
+        <table class="space">
+            <tr>
+                <td><img src="brand/aurawhite brand.png" style="width: 300px;"></td>
+                <td>Aura White Global Sdn. Bhd., which was previously known as Aurawhite Beauty, is a Bumiputera company
+                    established by Mdm. Nur Fareena Mohd Azmir and her husband Mr. Saiful Safwan Mohamed Ghazi. Both of
+                    them are very successful entrepreneurs. Based on her many years of fruitful experience in the field,
+                    Mdm. Fareena has successfully founded Aurawhite Beauty, in which the same name is also used for its
+                    own products. Since its establishment in the year 2013, Aurawhite Beauty has been processing its
+                    range of products according to Standard Good Manufacturing Practice (GMP). Apart from taking the
+                    market demands as its import consideration, the company also makes it a point to ensure that the
+                    processes and procedures involved in the production are in accordance with the standards fixed
+                    beforehand. Hence, Aurawhite Beauty is always able to come out with high quality products, which
+                    meet expectation and offered with very reasonable price. In terms of promotion, Aurawhite Beauty
+                    promotes its products extensively via printed media, electronic media as well as in the social
+                    media. Instances are Star Malaysia, Jilbab, Metro, Women’s Weekly Magazine, Harmoni, TV3, Astro and
+                    Facebook.</td>
+            </tr>
+        </table>
+        <br>
+        <h3 style="text-align: center;">Advertisment AuraWhite</h3>
+
+        <div class="space" align="center">
+            <video width="50%" height="480" controls>
+                <source src="aurawhite advertise/AURAWHITE ad.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+        <h3 style="text-align: center;">Radio Advertisment AuraWhite</h3>
+
+        <div class="space" align="center">
+            <audio controls>
+                <source src="aurawhite advertise/AURAWHITE BEAUTY radio ad.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <h3 style="text-align: center;">For more information:</h3>
+        <div align="center">
+            <button>
+                <p>
+                <p><a href="https://aurawhite2u.com/" target="_blank" style="font-size: 20px;">Go to AuraWhite Official
+                        Website</a></p>
+                </p>
+            </button>
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <div style="padding-top: 40px; padding-left: 20px;">
+        <h3 id="blackmore" style="padding-top: 20px;">
+            <a href="https://www.blackmores.com.my/en" target="_blank" style="text-decoration: none;">Blackmores</a>
+        </h3>
+
+        <table class="space">
+            <tr>
+                <td><img src="brand/blackmore brand.png" style="width: 300px;"></td>
+                <td>Blackmores is Australia’s leading natural health company. Based on the vision of our founder Maurice
+                    Blackmore (1906-1977), we are passionate about natural health and inspiring people to take control
+                    of and invest in their wellbeing. We develop high quality products and services that deliver a more
+                    natural approach to health, based on our expertise in vitamins, minerals, herbs and nutrients.</td>
+            </tr>
+        </table>
+        <br>
+        <h3>What is Blackmores?</h3>
+        <ul style="list-style-type: circle;">
+            <li>Blackmores is an ASX publicly-listed company employing 1200 people in 13 markets across Asia-Pacific.
+            </li>
+            <li>Since being founded by pioneering naturopath Maurice Blackmore in 1932, we’ve been connecting people to
+                the healing power of nature and giving them the choice to make living well each day a natural way of
+                life. </li>
+            <li>We combine our knowledge of nature and science to deliver quality solutions to bring wellness to people
+                and their pets everywhere, every day. In 2020 we were awarded Australia’s Most Trusted Brand for
+                vitamins and supplements for the 13th year running.</li>
+        </ul>
+        <br>
+        <h3 style="text-align: center;">Advertisment Blackmores </h3>
+
+        <div class="space" align="center">
+            <video width="50%" height="480" controls>
+                <source src="blackmore advertise/Blackmores ads.mp4" type="video/mp4">
+            </video>
+        </div>
+
+
+        <h3 style="text-align: center;">Feedback Blackmores </h3>
+
+        <div class="space" align="center">
+            <audio controls>
+                <source src="blackmore advertise/review blackmore.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+
+        <h3 style="text-align: center;">For more information:</h3>
+        <div align="center">
+            <button>
+                <p>
+                <p><a href="https://www.blackmores.com.my/en" target="_blank" style="font-size: 20px;">Go to Blackmores
+                        Official Website</a></p>
+                </p>
+            </button>
+
+        </div>
+    </div>
+    <br>
+    <hr>
+
+    <div style="padding-top: 40px; padding-left: 20px;">
+        <h3 id="scott" style="padding-top: 20px;">
+            <a href="https://www.facebook.com/ScottsMalaysia/" target="_blank"
+                style="text-decoration: none;">Scott’s</a>
+        </h3>
+
+        <table class="space">
+            <tr>
+                <td><img src="brand/scott Brand.jpg" style="width: 300px;"></td>
+                <td>Scott’s has a long-standing history of products and continues to innovate to support children’s
+                    nutritional needs. From the very first Scott’s Emulsion, the brand has evolved to own a range of
+                    winning products including Vitamin C Pastille, DHA Gummies & Multivitamin Gummies, to support your
+                    kids’ growth everyday while giving them the taste they love. Scott’s, the No. 1* Kids’ Vitamin Brand
+                    in Singapore.</td>
+            </tr>
+        </table>
+        <br>
+
+        <h3 style="text-align: center;">Advertisment Scott’s </h3>
+
+        <div class="space" align="center">
+            <video width="50%" height="480" controls>
+                <source src="scott ads/scott ads.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <h3 style="text-align: center;">For more information:</h3>
+        <div align="center">
+            <button>
+                <p>
+                    <a href="https://www.facebook.com/ScottsMalaysia/" target="_blank" style="font-size: 20px;">Go to
+                        Scott’s Official Website</a>
+                </p>
+            </button>
+        </div>
+    </div>
+
+    <br>
+
+    <table>
+        <tr>
+            <th colspan="7" style="font-size: 30px; color: #452769;">Available Product : </th>
+        </tr>
+        <tr>
+            <td><img src="brand/Bio-life brand.png" class="image-brand"></td>
+            <td><img src="brand/biore brand.png" class="image-brand"></td>
+            <td><img src="brand/blackmore brand.png" class="image-brand"></td>
+            <td><img src="brand/Lacura Brand.jpg" class="image-brand"></td>
+            <td><img src="brand/loreal Brand.png" class="image-brand"></td>
+            <td><img src="brand/aurawhite brand.png" class="image-brand"></td>
+            <td><img src="brand/Wardah Brand.png" class="image-brand"></td>
+        </tr>
+    </table>
+
+    <footer>
+        <p>Disclaimer Website (For Education Purpose Only)- Sanitas Marketing Sdn Bhd</p>
+        <img src="images/logo.png" class="logo">
+    </footer>
+
+</body>
+
+</html>

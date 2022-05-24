@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanitas Store</title>
+    <link rel="icon" href="images/logoWebsite.ico">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+
+         /*FOR ALL*/
+        * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        }
+         /*END ALL*/
+
+        /*FOR NAVIGATION*/
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 80px;
+            background: #fbeaff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            left: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #navbar li {
+            list-style: none;
+            padding: 0 25px;
+        }
+        
+        #navbar li a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.5s ease;
+        }
+        
+        #navbar li a:hover {
+            color: #845ec2;
+        }
+
+        .logo {
+            width: 180px;
+            height: 70px;
+        }
+        /*END NAVIGATION*/
+
+        /*FOR IMAGE OFFICE*/
+        #image-office {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        }
+        /*END IMAGE OFFICE*/
+
+        /*FOR PARAGRAPH CLASS*/
+        .paragraph {
+            width: 70%; 
+            text-align: center; 
+            margin-left: auto; 
+            margin-right:auto;
+        }
+        /*END PARAGRAPH CLASS*/
+
+        /*FOR TABLE*/
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        }
+
+        th, td {
+        padding: 8px;
+        text-align: center;
+        background-color: #f2f2f2;
+        }
+
+        th {
+        background-color: #b39cd0;
+        color: white;
+        }
+        /*END TABLE*/
+
+        /*FOR CLASS NAV-ITEM*/
+        .nav-items {
+            padding-left: 50px;
+            padding-right: 50px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.5s ease;
+        }
+        /*END CLASS NAV-ITEM*/
+
+        /*FOR FOOTER*/
+        footer {
+        text-align: center;
+        padding: 3px;
+        background-color: #d9d0e6;
+        }
+        /*END FOOTER*/
+
+    </style>
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div>
+        <center>
+            <table style= "color: black;">
+                <th><a href="#aboutus" class="nav-items">About Us</a></th>
+                <th><a href="#ourcompany" class="nav-items">Our Company</a></th>
+                <th><a href="#vision" class="nav-items">Our Vision/Mission</a></th>
+                <th><a href="#career" class="nav-items" >Our Careers</a></th>
+                <th><a href="#locate" class="nav-items" >Located At</a></th>
+                <th><a href="#reach" class="nav-items" >Reach Us</a></th>
+            </table>
+            <br>
+        </center>
+    </div>
+
+    <h1 style="font-family: 'Water Brush', cursive; font-size: 100px; text-align: center; color: #452769;">Sanitas</h1>
+
+    <img src="picture/Sanitas Building.jpg" alt="Sanitas Building" id="image-office">
+    <br>
+    <div class="paragraph">
+        <h1 id="aboutus" style="color: #452769; padding-top: 20px;">About Us</h1>
+        <br>
+        <p>Sanitas is Asia’s leading health and beauty retailer, currently operating over 7,200 stores – 
+            more than 1,500 pharmacies, in 13 Asian and European markets, including Mainland China, Hong Kong, 
+            Taiwan, Macau, Singapore, Thailand, Malaysia, Philippines, Vietnam, Indonesia, 
+            Russia, Turkey and Ukraine.</p>
+        <br>
+        <p>Sanitas continually sets the standards in the health, wellness and beauty market, 
+            providing personalized advice and counseling in health, beauty and personal care 
+            on top of its market-leading product range, making customers LOOK GOOD, FEEL GREAT 
+            every day. Since 2009, Sanitas has been the No. 1 pharmacy/drugstore brand in Asia, 
+            Campaign Asia-Pacific/ Nielsen’s “Asia’s Top 1.000 Brands” Online Study 2018 of over
+             8.000 respondents across 14 markets in Asia Pacific region. In Europe, Sanitas is 
+             also the leading health and beauty retailer in Ukraine.</p>
+             
+        <br>
+        <h1 id="ourcompany" style="color: #452769; padding-top: 30px;">Our Company</h1>
+        <br>
+        <p>Sanitas were established in 2005. Through a sole and exclusive licensing arrangement
+             with A.S. Sanitas Group, Iskandar Sharif opened the first Sanitas stores in Malaysia which 
+             located at Pondok Indah Mall 2, in 2006.  Sanitas is a leading health and beauty retailer in 
+             Asia and Europe. Currently, Sanitas Malaysia owned 106 stores (as per March 2019) that located 
+             across Kuala Lumpur and Johor, Selangor, and Penang. Sanitas Malaysia also expanded 
+             its business to e-commerce in order to getn closer with the customers and able to provide non-stop 
+             services.  This is an effort to actualized Sanitas mission in Malaysia which is to make the 
+             customers always “look good and feel great” everyday.</p>
+    </div>
+    <br>
+    <div class="paragraph">
+        <h1 id="vision" style="color: #452769; padding-top: 30px;">Our Vision/Mission</h1>
+        <table>
+            <tr>
+                <th style="background-color: #ac85eb; color: white;">Vision</th>
+                <td style="background-color: #f2f2f2;">
+                    <p>Our mission is to provide clinical excellence, outstanding customer service and sound business principles to become the provider and employer of choice in the areas we serve.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <th style="background-color: #ac85eb; color: white;">Mission</th>
+                <td style="background-color: #f2f2f2;">
+                    <p>Sanitas mission is to help people around the world to "Look Good, Feel Great, Have Fun". 
+                    We offer a unique experience to customers through professional advice and expertise, 
+                    interesting shopping environments and the promise of great value every day.</p>
+                </td>
+            </tr>
+        </table>      
+    </div>
+    <br>
+    <div class="paragraph">
+        <h1 id="career" style="color: #452769; padding-top: 30px;">Our Careers</h1>
+        <br>
+            <h2 style="color: #452769;">Life at Sanitas</h2>
+            <br>
+            <p>At Sanitas, everyone has their part to play. Your ideas are not only heard but valued, too. Whatever your 
+            mission, you will make a tangible difference by turning values into action. Our goal? To make Beauty accessible to all, by all. 
+            By embracing diversity, sustainability, innovation and well-being in the workplace, we lay the groundwork for you to achieve great things!  
+            Can you imagine your life at Sanitas? Discover what working for the #1 Beauty Tech company looks like.</p>
+        <br>
+            <h2 style="color: #452769;">Teams are our Heroes</h2>
+            <br>
+            <p>Joining Sanitas means being willing to influence the shapes and definitions of Beauty in the world: diverse, 
+                deep-rooted and always changing. With our teams on board, Beauty is becoming tech-based today. What will come next? 
+                You can decide with us. But above all, it means joining a team of talented and inspiring people. Wonder what our culture 
+                is like? Well, we define success as making a positive, conscious impact. At Sanitas, you will be encouraged to think and 
+                act beyond your job. We push boundaries and move fast globally to stay ahead of the game. Your job will be your own innovation 
+                playground. We encourage different points of view. What sets you apart is what makes you great! You will always have the space 
+                to question, express, agree and disagree. We unleash everyone’s potential. Here, learning opportunities are endless. You will 
+                build your own unique path. We believe in the impact of great mentors. You will be inspired by people you won’t ever want to 
+                forget.</p>
+    </div>
+
+    <br>
+    <div class="paragraph">
+        <h2 id="locate" style="color: #452769;">Located At: </h2>
+        <table border="1">
+                <tr>
+                    <th colspan="2" style="background-color: #ac85eb; color: white;">Location</th>
+                </tr>
+                <tr>
+                    <th rowspan="4">Kuala Lumpur</th>
+                    <td>
+                        <p>No. 26, Ground Floor, Jalan 14/48A, Sentul Raya Boulevard, Off, Jalan Sentul, Sentul, 51000 Kuala Lumpur</p>
+                    </td>
+                </tr>  
+                <tr>
+                    <td><p>Lot 24-30, Ground Floor, Jalan Hang Kasturi, Kuala Lumpur City Centre, 50050 Kuala Lumpur, Federal Territory of Kuala Lumpur</p></td>
+                </tr>
+                <tr>
+                    <td><p>No. 63, Ground Floor, Jln Sultan Ismail, Bukit Bintang, 50250 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p></td>
+                </tr>
+                <tr>
+                    <td><p>Lot No. L1.35.00 & 1.36.02, Level 1 Pavilion Kuala Lumpur, 168, Jln Bukit Bintang, 55100 Kuala Lumpur</p></td>
+                </tr>
+
+                <tr>
+                    <th rowspan="5">Johor</th>
+                    <td>
+                        <p>No. 122 Ground Floor, Jalan SEGT, Taman Bintang Jaya, 85300 Labis, Johor</p>
+                    </td>
+                </tr>  
+                <tr>
+                    <td><p>Shopping Complex, Lot G7, G08 & G09, Ground Floor, One Segamat, Jln Kolam Air, 85000 Segamat District, Johor</p></td>
+                </tr>
+                <tr>
+                    <td><p>No. 8 Ground Floor, Jalan Susur, Jalan Utama 2/1, Taman Utama, 85000 Segamat District, Johor</p></td>
+                </tr>
+                <tr>
+                    <td><p>Lot 6, Ground Floor, Jalan Ros, Bandar Seberang, 85000 Segamat District, Johor</p></td>
+                </tr>
+                <tr>
+                    <td><p>17, Jalan Payamas, Kampung Padang Lalang, 84900 Tangkak, Johor</p></td>
+                </tr>
+
+                <tr>
+                    <th rowspan="5">Selangor</th>
+                    <td>
+                        <p>No. 5, Ground Floor, Jalan SL 1/3 11 1/4 Miles, Jalan Cheras, Bandar Sungai Long, 43000 Kajang, Selangor</p>
+                    </td>
+                </tr>  
+                <tr>
+                    <td><p>No. 112, Ground Floor, Jalan SS 15/4b, Ss 15, 47500 Subang Jaya, Selangor</p></td>
+                </tr>
+                <tr>
+                    <td><p>No. 42 Ground Floor, Jalan Melati 3/1, Bandar Melawati, 45000 Kuala Selangor, Selangor</p></td>
+                </tr>
+                <tr>
+                    <td> <p>No. 31 Ground Floor, Jalan Medan Niaga 2, Medan Niaga, 45000 Kuala Selangor, Selangor</p></td>
+                </tr>
+                <tr>
+                    <td><p>No.2-1-1, Ground Floor, Jalan Setia Prima P U13/P Selangor Setia Alam, Seksyen, U13 Shah Alam, 40170 Shah Alam, Selangor</p></td>
+                </tr>
+
+                <tr>
+                    <th rowspan="3">Penang</th>
+                    <td>
+                        <p> Lot 49G & 51G Vantage Point Jln Lenggong Jelutong Jelutong Pulau Pinang MY 11600, Jalan Lenggong, 11600 Jelutong, Penang</p>
+                    </td>
+                </tr>  
+                <tr>
+                    <td><p>Gurney Plaza, Lot 170-B1-19, Gurney Dr, 10250 George Town, Penang</p></td>
+                </tr>
+                <tr>
+                    <td><p>Tesco Penang, Lot No. 33,First Floor, Lebuh Tengku Kudin 1, Bandar Jelutong, 11700, Penang</p></td>
+                </tr>
+        </table>      
+    </div>
+
+    <br>
+    <div class="paragraph">
+        <h1 id="reach" style="color: #452769; padding-top: 30px;">Reach Us</h1>
+        <br>
+        <h2 style="color: #452769;">Our Address: </h2>
+        <p>Lot LL2.67, LL2, SUNWAY PYR, NO 3, 
+            <br> JALAN PJS 11/15. PJ, SELANGOR, 
+            <br> SELANGOR, 46150.</p>
+        <br>
+        <h2 style="color: #452769;">Our Contact: </h2>
+        <p>Tel: +603-8923 2234
+            <br> Fax: +603-9823 4334
+            <br> Email: Sanitas@gmail.com
+        </p>
+    </div>
+
+    <div align="center" style="padding-top:30px; padding-bottom: 70px;">
+        <h2 style="color: #452769; padding-top: 30px;">Main Office: </h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15936.332006006798!2d101.605639!3d3.0725!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd5c80bd03b8664d!2sAEON%20%40%20Sunway%20Pyramid!5e0!3m2!1sen!2smy!4v1652246390279!5m2!1sen!2smy" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <p>Disclaimer Website (For Education Purpose Only)- Sanitas Marketing Sdn Bhd</p>
+        <img src="images/logo.png" class="logo">
+    </footer>
+</body>
+</html>

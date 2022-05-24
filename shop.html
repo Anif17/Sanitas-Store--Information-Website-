@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanitas Store</title>
+    <link rel="icon" href="images/logoWebsite.ico">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+        @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+         /*FOR ALL*/
+        * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        }
+        /*END ALL*/
+
+        /*FOR TABLE*/
+        table {
+        border-collapse: collapse;
+        width: 100%;
+        border-radius: 16px;
+        overflow: hidden;
+        }
+
+        th, td {
+        text-align: center;
+        padding: 8px;
+        }
+
+        th {
+        background-color: #b39cd0;
+        color: white;
+        }
+
+        table tr td img{
+            width: 180px;
+            height: auto;
+        }
+
+        tr:nth-child(even){background-color: #f2f2f2}
+
+        tr:hover {background-color: rgba(0, 255, 255, 0.196);}
+        /*END TABLE*/
+
+        /*FOR CLAS NAV-ITEM*/
+        .nav-items {
+            padding-left: 50px;
+            padding-right: 50px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.5s ease;
+        }
+        /*END CLASS NAV-ITEM*/
+        
+
+        /*FOR NAVIGATION*/
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 80px;
+            background: #fbeaff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            left: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #navbar li {
+            list-style: none;
+            padding: 0 25px;
+        }
+        
+        #navbar li a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.5s ease;
+        }
+        
+        #navbar li a:hover {
+            color: #845ec2;
+        }
+
+        .logo {
+            width: 180px;
+            height: 70px;
+        }
+        /*END NAVIGATION*/
+
+        /*FOR CENTER AND FOOTER*/
+        .center {
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        footer {
+        text-align: center;
+        padding: 3px;
+        background-color: #d9d0e6;
+        }
+        /*END CENTER AND FOOTER*/
+
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div>
+        <center>
+            <table style= "color: black;">
+                <th><a href="#loreal" class="nav-items">Loreal</a></th>
+                <th><a href="#blackmore" class="nav-items">Blackmore</a></th>
+                <th><a href="#lacura" class="nav-items">Lacura</a></th>
+                <th><a href="#biore" class="nav-items" >Biore</a></th>
+                <th><a href="#biolife" class="nav-items" >Bio-life</a></th>
+                <th><a href="#scott" class="nav-items">Scott</a></th>
+                <th><a href="#wardah" class="nav-items">Wardah</a></th>
+                <th><a href="#aurawhite" class="nav-items">Aura White</a></th>
+            </table>
+            <br>
+        </center>
+    </div>
+
+    
+    <div class="center" align="center" style="width: 80%; padding-bottom: 40px;">
+        <p style="font-size: 50px; padding-bottom: 30px; font-family: 'Permanent Marker', cursive;">LIST ALL PRODUCT</p>
+        
+        <p id="biore" style="font-size: 40px; font-weight: bolder; font-family: 'Permanent Marker', cursive;">BIORE'</p>
+        <img src="banner/biore_hero.jpg" style="width: 1000px; padding-bottom: 20px;">
+        <div>
+        <table border="1">
+            <tr>
+                <th>Brand</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="10" style="vertical-align:top"><img src="brand/biore brand.png"></td>
+            </tr>
+            <tr>
+                <td><img src="biore/f1.png"></td>
+                <td>UV Aqua Rich Watery Essence SPF50+ Sunscreen 50g</td>
+                <td>RM 35.00</td>
+            </tr>
+            <tr>
+                <td><img src="biore/f2.png"></td>
+                <td>UV Perfect Milk Cool SPF50+ Daily Sunscreen 25ml</td>
+                <td>RM 19.80</td>
+            </tr>
+            <tr>
+                <td><img src="biore/f2.png"></td>
+                <td>UV Aqua Rich Watery Essence SPF50+ Sunscreen 50g</td>
+                <td>RM 35.00</td>
+            </tr>
+            <tr>
+                <td><img src="biore/f3.png"></td>
+                <td>UV Perfect Milk Moisture SPF 50+ Sunscreen 25ml</td>
+                <td>RM 19.80</td>
+            </tr>
+            <tr>
+                <td><img src="biore/f4.png"></td>
+                <td>Cleansing Oil 150ml</td>
+                <td>RM 24.30</td>
+            </tr>
+            <tr>
+                <td><img src="biore/f5.png"></td>
+                <td>Cleansing Strips Pore Pack Black 10's</td>
+                <td>RM 14.00</td>
+            </tr>
+            <tr>
+                <td><img src="biore/f6.png"></td>
+                <td>Skin Caring Facial Foam Scrub 130g</td>
+                <td>RM 24.39</td>
+            </tr>
+            <tr>
+                <td><img src="biore/f7.jpg"></td>
+                <td>Skin Caring Facial Foam Moisture 130g</td>
+                <td>RM 24.39</td>
+            </tr>
+            <tr>
+                <td><img src="biore/f8.png"></td>
+                <td>UV Perfect Face Milk SPF50+ Daily Sunscreen 30ml</td>
+                <td>RM 31.95</td>
+            </tr>
+        </table>
+        </div>
+        <br>
+
+        <p id="biolife" style="font-size: 40px; font-weight: bolder; font-family: 'Permanent Marker', cursive;">BIO-LIFE</p>
+        <img src="banner/bio-life_hero.jpg" style="width: 1000px; padding-bottom: 20px;">
+        <div>
+        <table border="1">
+            <tr>
+                <th>Brand</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="10" style="vertical-align:top"><img src="brand/Bio-life brand.png"></td>
+            </tr>
+            <tr>
+                <td><img src="bio-life/f1.png"></td>
+                <td>Calcium & Magnesium Plus 30's</td>
+                <td>RM 27.00</td>
+            </tr>
+            <tr>
+                <td><img src="bio-life/f2.png"></td>
+                <td>Non Acidic Vitamin C & Bioflavonoids 30'sl</td>
+                <td>RM 48.00</td>
+            </tr>
+            <tr>
+                <td><img src="bio-life/f3.jpg"></td>
+                <td>Nat B Fizzy 10s X 2</td>
+                <td>RM41.90</td>
+            </tr>
+            <tr>
+                <td><img src="bio-life/f4.png"></td>
+                <td>Glucosamine 100's + 2 x 30's</td>
+                <td>RM67.95</td>
+            </tr>
+            <tr>
+                <td><img src="bio-life/f5.png"></td>
+                <td>A.B. Pre- & Pro-biotics 10 x 2.3g</td>
+                <td>RM26.00</td>
+            </tr>
+            <tr>
+                <td><img src="bio-life/f6.png"></td>
+                <td>Bio-Zinc Complex 100s</td>
+                <td>RM51.00</td>
+            </tr>
+            <tr>
+                <td><img src="bio-life/f7.png"></td>
+                <td>Saw Palmetto & Pumpkin Seed 100S</td>
+                <td>RM132.00</td>
+            </tr>
+            <tr>
+                <td><img src="bio-life/f8.png"></td>
+                <td>Mega-C Plus Bioflavonoid 30's</td>
+                <td>RM55.00</td>
+            </tr>
+        </table>
+        </div>
+
+        <br>
+
+        <p id="blackmore" style="font-size: 40px; font-weight: bolder; font-family: 'Permanent Marker', cursive;">BLACKMORES</p>
+        <img src="banner/blackmore_hero.jpg" style="width: 1000px; height: 400px; padding-bottom: 20px;">
+        <div>
+        <table border="1">
+            <tr>
+                <th>Brand</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="10" style="vertical-align:top"><img src="brand/blackmore brand.png" ></td>
+            </tr>
+            <tr>
+                <td><img src="blackmore/f1.png"></td>
+                <td>CALCIUM + D3 30S</td>
+                <td>RM 33.00</td>
+            </tr>
+            <tr>
+                <td><img src="blackmore/f2.png"></td>
+                <td>Multivitamin + Mineral 120s</td>
+                <td>RM 161.00</td>
+            </tr>
+            <tr>
+                <td><img src="blackmore/f3.png"></td>
+                <td>Bio C 120s</td>
+                <td>RM 155.00</td>
+            </tr>
+            <tr>
+                <td><img src="blackmore/f4.png"></td>
+                <td>Multivitamin 30's</td>
+                <td>RM 48.00</td>
+            </tr>
+            <tr>
+                <td><img src="blackmore/f5.png"></td>
+                <td>Magnesium 60's</td>
+                <td>RM 46.00</td>
+            </tr>
+            <tr>
+                <td><img src="blackmore/f6.png"></td>
+                <td>Executive B 120s</td>
+                <td>RM 143.00</td>
+            </tr>
+            <tr>
+                <td><img src="blackmore/f7.png"></td>
+                <td>Glucosamine 1500MG 30S</td>
+                <td>RM 80.00</td>
+            </tr>
+            <tr>
+                <td><img src="blackmore/f8.png"></td>
+                <td>Multivitamins + Minerals 60's</td>
+                <td>RM 84.00</td>
+            </tr>
+        </table>
+        </div>
+
+        <br>
+
+        <p id="loreal" style="font-size: 40px; font-weight: bolder; font-family: 'Permanent Marker', cursive;">L'Oréal</p>
+        <img src="banner/loreal_hero.jpg" style="width: 1000px; padding-bottom: 20px;">
+        <div>
+        <table border="1">
+            <tr>
+                <th>Brand</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="13" style="vertical-align:top"><img src="brand/loreal Brand.png" ></td>
+            </tr>
+            <tr>
+                <td><img src="loreal/f1.jpg"></td>
+                <td>Loreal Extraordinary Oil (High Shine) 100ml -Pink</td>
+                <td>RM 42.20</td>
+            </tr>
+            <tr>
+                <td><img src="loreal/f2.jpg"></td>
+                <td>Loreal Extraordinary Oil (Dry Hair) 100ml -Brown</td>
+                <td>RM 42.20</td>
+            </tr>
+            <tr>
+                <td><img src="loreal/f3.jpg"></td>
+                <td>Loreal Extraordinary Oil (Normal Or Dry Hair) 100ml -Gold</td>
+                <td>RM 42.20</td>
+            </tr>
+            <tr>
+                <td><img src="loreal/f4.jpg"></td>
+                <td>Loreal Fall Resist 3X Hair Mask 200ml</td>
+                <td>RM 29.30</td>
+            </tr>
+            <tr>
+                <td><img src="loreal/f5.jpg"></td>
+                <td>Loreal Revitalift Night Cream 50ml</td>
+                <td>RM 62.30</td>
+            </tr>
+            <tr>
+                <td><img src="loreal/f6.jpg"></td>
+                <td>Loreal Revitalift Day Cream Spf23/Spf35 50ml</td>
+                <td>RM 54.80</td>
+            </tr>
+            <tr>
+                <td><img src="loreal/f7.jpg"></td>
+                <td>Loreal Pro Youth Mask Brightening</td>
+                <td>RM 8.20</td>
+            </tr>
+            <tr>
+                <td><img src="loreal/f8.jpg"></td>
+                <td>Loreal Revitalift Wht Anti-Wrinkle + Spot Corrector Spf18 Cream 50ml</td>
+                <td>RM 41.50</td>
+            </tr>
+            <tr>
+                <td><img src="loreal/f9.jpg"></td>
+                <td>Loreal Gentle Lip & Make Up Remover 125ml</td>
+                <td>RM 26.20</td>
+            </tr>
+            <tr>
+                <td><img src="loreal/f10.jpg"></td>
+                <td>oreal Revitalift Anti Wrinkle Aqua-Milky Toner 200ml</td>
+                <td>RM 41.50</td>
+            </tr>
+            <tr>
+                <td><img src="loreal/f11.jpg"></td>
+                <td>Loreal Men Expert Hydra Power Watery Foaming Gel 100ml</td>
+                <td>RM 18.90</td>
+            </tr>
+            <tr>
+                <td><img src="loreal/f12.jpg"></td>
+                <td>Loreal Revitalift Laser X3 Day Cream 50ml</td>
+                <td>RM 72.20</td>
+            </tr>
+            
+        </table>
+        </div>
+
+        <br>
+
+        <p id="lacura" style="font-size: 40px; font-weight: bolder; font-family: 'Permanent Marker', cursive;">LACURA</p>
+        <img src="banner/lacura_hero.jpg" style="width: 1000px; height: 400px; padding-bottom: 20px;">
+        <div>
+        <table border="1">
+            <tr>
+                <th>Brand</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="13" style="vertical-align:top"><img src="brand/Lacura Brand.jpg" ></td>
+            </tr>
+            <tr>
+                <td><img src="lacura/f1.jpg"></td>
+                <td>Lacura Rose Facial Oil</td>
+                <td>RM 38.00</td>
+            </tr>
+            <tr>
+                <td><img src="lacura/f2.jpg"></td>
+                <td>Lacura Healthy Glow Glycolic Toner</td>
+                <td>RM 16.00</td>
+            </tr>
+            <tr>
+                <td><img src="lacura/f3.jpg"></td>
+                <td>Lacura Rejuvelate Day Cream</td>
+                <td>RM 20.00</td>
+            </tr>
+            <tr>
+                <td><img src="lacura/f4.jpg"></td>
+                <td>Snapshot Ready Foundation Primer</td>
+                <td>RM 38.00</td>
+            </tr>
+            <tr>
+                <td><img src="lacura/f5.jpg"></td>
+                <td>Lacura Acacia Collagen Tonic</td>
+                <td>RM 23.00</td>
+            </tr>
+            <tr>
+                <td><img src="lacura/f6.jpg"></td>
+                <td>Lacura Glycolic Serum</td>
+                <td>RM 33.00</td>
+            </tr>
+            <tr>
+                <td><img src="lacura/f7.jpg"></td>
+                <td>Lacura Vitamin C Hot Cloth Cleanser</td>
+                <td>RM 22.00</td>
+            </tr>
+            <tr>
+                <td><img src="lacura/f8.jpg"></td>
+                <td>Lacura Moisturising Face Wash</td>
+                <td>RM 5.00</td>
+            </tr>
+            <tr>
+                <td><img src="lacura/f9.jpg"></td>
+                <td>Lacura Caviar Illumination Day Cream</td>
+                <td>RM 40.00</td>
+            </tr>
+            <tr>
+                <td><img src="lacura/f10.jpg"></td>
+                <td>Lacura Foot Scrub</td>
+                <td>RM 27.00</td>
+            </tr>
+            <tr>
+                <td><img src="lacura/f11.jpg"></td>
+                <td>SensatioNail Gel Nail Kit Red/Black</td>
+                <td>RM 48.00</td>
+            </tr>
+            <tr>
+                <td><img src="lacura/f12.jpg"></td>
+                <td>Lacura Pink Clay Dual Mask</td>
+                <td>RM 40.00</td>
+            </tr>
+        </table>
+        </div>
+
+        <br>
+
+        <p id="scott" style="font-size: 40px; font-weight: bolder; font-family: 'Permanent Marker', cursive;">SCOTT'S</p>
+        <img src="banner/scott_hero.jpg" style="width: 1000px; padding-bottom: 20px;">
+        <div>
+        <table border="1">
+            <tr>
+                <th>Brand</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="13" style="vertical-align:top"><img src="brand/scott Brand.jpg" ></td>
+            </tr>
+            <tr>
+                <td><img src="scott/F1.png"></td>
+                <td>Scotts Emulsion Orange 200ml</td>
+                <td>RM 11.80</td>
+            </tr>
+            <tr>
+                <td><img src="scott/F2.png"></td>
+                <td>Scotts Multivitamin Gummies Tropical 60S</td>
+                <td>RM 46.50</td>
+            </tr>
+            <tr>
+                <td><img src="scott/F3.png"></td>
+                <td>Scotts Multivitamin Gummies Apple 60S</td>
+                <td>RM 46.50</td>
+            </tr>
+            <tr>
+                <td><img src="scott/F4.png"></td>
+                <td>Scotts DHA Gummies Blackcurrant 15s</td>
+                <td>RM 67.50</td>
+            </tr>
+            <tr>
+                <td><img src="scott/F5.png"></td>
+                <td>Scotts Vitamin C Blackcurrant Pastilles 50's</td>
+                <td>RM 19.10</td>
+            </tr>
+            <tr>
+                <td><img src="scott/F6.png"></td>
+                <td>Scotts DHA Gummies Strawberry 15's</td>
+                <td>RM 11.30</td>
+            </tr>
+            <tr>
+                <td><img src="scott/F7.png"></td>
+                <td>Scotts DHA Gummies Orange 60's</td>
+                <td>RM 32.00</td>
+            </tr>
+            <tr>
+                <td><img src="scott/F8.png"></td>
+                <td>Scotts Fish Oil 1000mg 60s</td>
+                <td>RM 43.80</td>
+            </tr>
+        </table>
+        </div>
+
+        <br>
+
+        <p id="wardah" style="font-size: 40px; font-weight: bolder; font-family: 'Permanent Marker', cursive;">WARDAH</p>
+        <img src="banner/wardah_hero.jpg" style="width: 1000px; padding-bottom: 20px;">
+        <div>
+        <table border="1">
+            <tr>
+                <th>Brand</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="13" style="vertical-align:top"><img src="brand/Wardah Brand.png" ></td>
+            </tr>
+            <tr>
+                <td><img src="wardah/F1.jpg"></td>
+                <td>WARDAH Wardah Light Gentle Cleanser 100ML</td>
+                <td>RM 9.90</td>
+            </tr>
+            <tr>
+                <td><img src="wardah/F2.jpg"></td>
+                <td>WARDAH Exclusive Lipstick 21 OP 1's</td>
+                <td>RM 15.60</td>
+            </tr>
+            <tr>
+                <td><img src="wardah/F3.jpg"></td>
+                <td>WARDAH Lightening Face Toner 125ml</td>
+                <td>RM 8.90</td>
+            </tr>
+            <tr>
+                <td><img src="wardah/F4.jpg"></td>
+                <td>WARDAH White Secret Facial Wash with AHA 100ml</td>
+                <td>RM 12.40</td>
+            </tr>
+            <tr>
+                <td><img src="wardah/F5.jpg"></td>
+                <td>WARDAH Clrfit Matte Foundation 33W Olive Beige</td>
+                <td>RM 25.20</td>
+            </tr>
+            <tr>
+                <td><img src="wardah/F6.jpg"></td>
+                <td>WARDAH Wardah Lightening Powder Foundation Light Feel 01</td>
+                <td>RM 17.51</td>
+            </tr>
+            <tr>
+                <td><img src="wardah/F7.jpg"></td>
+                <td>WARDAH Lightening Day Gel 30 g</td>
+                <td>RM 17.10</td>
+            </tr>
+            <tr>
+                <td><img src="wardah/F8.jpg"></td>
+                <td>WARDAH Lightening BB Cream Light 15ml</td>
+                <td>RM 13.80</td>
+            </tr>
+        </table>
+        </div>
+
+        <br>
+
+        <p id="aurawhite" style="font-size: 40px; font-weight: bolder; font-family: 'Permanent Marker', cursive;">Aurawhite</p>
+        <img src="banner/aurawhite_hero.jpg" style="width: 1000px; padding-bottom: 20px;">
+        <div>
+        <table border="1">
+            <tr>
+                <th>Brand</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td rowspan="13" style="vertical-align:top"><img src="brand/aurawhite brand.png" ></td>
+            </tr>
+            <tr>
+                <td><img src="aurawhite/F1.jpg"></td>
+                <td>AURAWHITE BIRDNEST COLLAPEPTIDE</td>
+                <td>RM 190.00</td>
+            </tr>
+            <tr>
+                <td><img src="aurawhite/F2.jpg"></td>
+                <td>AuraMen Hair & Beard Growth Spray</td>
+                <td>RM 60.00</td>
+            </tr>
+            <tr>
+                <td><img src="aurawhite/F3.jpg"></td>
+                <td>AuraWhite Collagen Plus+</td>
+                <td>RM 150.00</td>
+            </tr>
+            <tr>
+                <td><img src="aurawhite/F4.jpg"></td>
+                <td>AuraWhite Bubbly Collagen Dust</td>
+                <td>RM 80.00</td>
+            </tr>
+            <tr>
+                <td><img src="aurawhite/F5.jpg"></td>
+                <td>AuraWhite Tripeptide Gold Collagen</td>
+                <td>RM 160.00</td>
+            </tr>
+            <tr>
+                <td><img src="aurawhite/F6.jpg"></td>
+                <td>Combo Sparkle Collagen + Sparkle Skincare</td>
+                <td>RM 65.00</td>
+            </tr>
+            <tr>
+                <td><img src="aurawhite/F7.jpg"></td>
+                <td>Combo Sparkle Collagen + Sparkle Skincare</td>
+                <td>RM 330.00</td>
+            </tr>
+            <tr>
+                <td><img src="aurawhite/F8.jpg"></td>
+                <td>Auramen With Whey Protein Plus</td>
+                <td>RM 150.00</td>
+            </tr>
+        </table>
+        </div>
+        
+</div>
+
+<footer>
+    <p>Disclaimer Website (For Education Purpose Only)- Sanitas Marketing Sdn Bhd</p>
+    <img src="images/logo.png" class="logo">
+</footer>
+
+</body>
+</html>

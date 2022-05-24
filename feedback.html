@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanitas Store</title>
+    <link rel="icon" href="images/logoWebsite.ico">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+        
+        /*FOR ALL*/
+        * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        }
+
+        body {
+        background-image: url('images/background-feedback.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+        background-size: cover;        
+        }
+        /*END ALL*/
+
+        /*FOR NAVIGATION*/
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 80px;
+            background: #fbeaff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            left: 0;
+            font-family: "Poppins", sans-serif;
+        }
+        
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #navbar li {
+            list-style: none;
+            padding: 0 25px;
+        }
+        
+        #navbar li a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.5s ease;
+        }
+        
+        #navbar li a:hover {
+            color: #845ec2;
+        }
+
+        .logo {
+            width: 180px;
+            height: 70px;
+        }
+        /*END NAVIGATION*/
+
+        /*FOR FORM*/
+        fieldset{
+        width: 580px;
+        height: 900px;
+        border-radius: 30px;
+        background-color: #b39cd0;
+        }
+
+        td{
+            font-size: 18px;
+            padding-top: 10px;
+        }
+
+        input{
+            width: 182px;
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        .radio-style{
+            width: 182px;
+            height: 25px;
+        }
+        /*END FORM*/
+
+        /*FOR FOOTER*/
+        footer {
+        text-align: center;
+        padding: 3px;
+        background-color: #d9d0e6;
+        }
+        /*END FOOTER*/
+    </style>
+</head>
+<body>
+
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div style="text-align: center;">
+        <br>
+        <h1 >Sanitas Feedback</h1>
+        <h4>We would like to hear your thoughs, concerns or problem with anything so that we can improve it!</h4>
+    </div>
+    
+    <div align="center" style="padding-top: 30px;">
+        <form>
+            <fieldset>
+                <table>
+                    <h1 style="font-size: bold;">Feedback</h1>
+                    <tr>
+                        <!--Name-->
+                        <td style="font-weight: bold;">Name</td>
+                        <td style="font-weight: bold;">:</td>
+                        <td><input type="text" name="name" id="name" placeholder="Enter your name"></td>
+                    </tr>
+
+                    <tr>
+                        <!--Email-->
+                        <td style="font-weight: bold;">Email</td>
+                        <td style="font-weight: bold;">:</td>
+                        <td><input type="email" name="email" id="email" placeholder="Enter your email"></td>
+                    </tr>
+
+                    <tr>
+                        <!--Gender-->
+                        <td style="font-weight: bold;">Gender :</td>
+                        <td style="font-weight: bold;">:</td>
+                        <td>
+                            <select id="gender">
+                                <option value="male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!--Contact-->
+                        <td style="font-weight: bold;">Contact Number (Optional)</td>
+                        <td style="font-weight: bold;">:</td>
+                        <td><input type="text" name="contact" id="contact" placeholder="Contact Number"></td>
+                    </tr>
+
+                    <tr>
+                        <!--Date-->
+                        <td style="font-weight: bold;">Date</td>
+                        <td style="font-weight: bold;">:</td>
+                        <td><input type="date" name="date" id="date"></td>
+                    </tr>
+
+                    <tr>
+                        <!--Service-->
+                        <td colspan="3" style="font-weight: bold;">Did you satisfy with our service :</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            <input style="width: 20px; height: 15px;" type="radio" name="rate" id="excellent" value="excel">
+                            <label for="excellent">Excellent</label>      
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            <input style="width: 20px; height: 15px;" type="radio" name="rate" id="good">
+                            <label for="good">Good</label>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="3">
+                            <input style="width: 20px; height: 15px;" type="radio" name="rate" id="netural">
+                            <label for="netural">Netural</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            <input style="width: 20px; height: 15px;" type="radio" name="rate" id="poor">
+                            <label for="poor">Poor</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!--Type-->
+                        <td colspan="3" style="font-weight: bold;">Type of feedback :</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">
+                            <input style="width: 20px; height: 15px;" type="checkbox" name="issue" id="is" value="issue">
+                            <label for="is">Issue</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input style="width: 20px; height: 15px;" type="checkbox" name="issue" id="ques" value="question">
+                            <label for="ques">Question</label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
+                            <input style="width: 20px; height: 15px;" type="checkbox" name="comment" id="com" value="comment">
+                            <label for="com">Comment</label>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!--Contact-->
+                        <td style="font-weight: bold;">Image (Optional)</td>
+                        <td style="font-weight: bold;">:</td>
+                        <td><input type="file" name="image"></td>
+                    </tr>
+
+                    <tr>
+                        <!--Feedback-->
+                        <td style="font-weight: bold;">Feedback Description</td>
+                        <td style="font-weight: bold;">:</td>
+                        <td><textarea name="feedback" id="feedback" cols="26" rows="5" placeholder="Feedback"></textarea></td>
+                    </tr>
+                    <tr>
+                        <!--suggestion-->
+                        <td style="font-weight: bold;">Suggestion & idea (Optional)</td>
+                        <td style="font-weight: bold;">:</td>
+                        <td><textarea name="suggestion" id="suggestion" cols="26" rows="5" placeholder="Suggestion & idea"></textarea></td>
+                    </tr>
+                    <tr>
+                        <!--button-->
+                        <td><input type="reset" value="Reset" style="width: 180px; height: 35px;"></td>
+                        <td></td>
+                        <td><input type="submit" value="Submit" style="width: 180px; height: 35px;"></td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>    
+    </div>
+
+    <h4 style="text-align: center; padding-top: 10px; padding-bottom: 25px;">At Sanitas, we care about your privacy. If you have questions or concerns about how we use your information, you may review our Privacy policy. non-us consumers should visit the country website serving their region.</h4>
+
+    <footer>
+        <p>Disclaimer Website (For Education Purpose Only)- Sanitas Marketing Sdn Bhd</p>
+        <img src="images/logo.png" class="logo">
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanitas Store</title>
+    <link rel="icon" href="images/logoWebsite.ico">
+    <meta name="description" content="Sanitas Store : Store of Beauty And Health Products">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+        /*FOR ALL*/
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        }
+
+        h1 {
+        font-size: 70px;
+        line-height: 64px;
+        }
+
+        h2 {
+        font-size: 60px;
+        line-height: 54px;
+        }
+
+        h4 {
+        font-size: 30px;
+        }
+
+        h6 {
+        font-weight: 700;
+        font-size: 12px;
+        }
+
+        p {
+        font-size: 16px;
+        }
+        /*END ALL*/
+
+        /*FOR HERO SECTION*/
+        #hero-image {
+        background-image: url(images/hero-image.jpg);
+        height: 75vh;
+        width: 100%;
+        background-size: cover;
+        background-position: top 25% right 0;
+        padding: 0 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        }
+
+        #hero-image button {
+        padding: 14px 80px 14px 65px;
+        font-size: 20px;
+        color: #845ec2;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 20px;
+        }
+        /*END HERO SECTION*/
+
+        /*FOR PRODUCT SECTION*/
+        #product {
+        text-align: center;
+        }
+
+        #product .pro-container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        flex-wrap: wrap;
+        }
+
+        #product .pro {
+        width: 23%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 1px solid #cce7d0;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
+        margin: 15px 0;
+        transition: 0.2s ease;
+        }
+
+        #product .pro:hover {
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        #product .pro img {
+        width: 100%;
+        height: auto;
+        }
+
+        #product .pro .desc {
+        text-align: start;
+        padding: 10px 0;
+        }
+
+        #product .pro .desc span {
+        color: #606063;
+        font-size: 15px;
+        }
+
+        #product .pro .desc h5 {
+        padding-top: 7px;
+        font-size: 14px;
+        }
+
+        #product .pro .desc h4 {
+        padding-top: 7px;
+        font: 20px;
+        font-weight: 700;
+        color: #b39cd0;
+        }
+        /*END HERO SECTION*/
+        
+        /*FOR NAVIGATION*/
+        #header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 80px;
+            background: #fbeaff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+            z-index: 999;
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+        
+        #navbar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #navbar li {
+            list-style: none;
+            padding: 0 25px;
+        }
+        
+        #navbar li a {
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            transition: 0.5s ease;
+        }
+        
+        #navbar li a:hover {
+            color: #845ec2;
+        }
+
+        .logo {
+            width: 180px;
+            height: 70px;
+        }
+
+        .icon-items {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        /*END NAVIGATION*/
+
+        /*FOR FOOTER*/
+        footer {
+        text-align: center;
+        padding: 3px;
+        background-color: #d9d0e6;
+        }
+        /*END FOOTER*/
+    </style>
+    
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="images/logo.png" class="logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hero-image">
+        <h4 style="padding-bottom: 15px;">OFFICIAL FLAGSHIP STORES</h4>
+        <h2 style="padding-bottom: 10px;">Luxury Quality at Wholesale Price</h2>
+        <h1 style="color: #845EC2;">Health And Beauty Products</h1>
+        <p style="font-size: 23px; margin: 15px 0 20px 0;">Authorised & Authentic</p>
+        <button> <a href="shop.html" style="text-decoration: none;"> Shop Now</a></button>
+    </section>
+
+    <section style="padding: 50px;">
+        <center>
+            <table>
+                <tr>
+                    <td class="icon-items"><img src="icon/support.png"></td>
+                    <td class="icon-items"><img src="icon/online-payment.png"></td>
+                    <td class="icon-items"><img src="icon/quality-guaranted.png"></td>
+                    <td class="icon-items"><img src="icon/privacy.png"></td>
+                    <td class="icon-items"><img src="icon/delivery.png"></td>
+                    <td class="icon-items"><img src="icon/save-money.png"></td>
+                    <td class="icon-items"><img src="icon/trust.png"></td>
+                    <td class="icon-items"><img src="icon/promotion.png"></td>
+                    
+                </tr>
+                <tr>
+                    <td style="text-align: center;">24 Hours Support</td>
+                    <td style="text-align: center;">Online Order</td>
+                    <td style="text-align: center;">Product Assurance</td>
+                    <td style="text-align: center;">Privacy Guaranted</td>
+                    <td style="text-align: center;">Delivery Provided</td>
+                    <td style="text-align: center;">Save Money</td>
+                    <td style="text-align: center;">Trusted</td>
+                    <td style="text-align: center;">Promotion</td>
+
+                </tr>
+            </table>
+        </center>
+
+    </section>
+
+
+    <section id="product" style="padding: 40px 80px">
+        <h2>Featured Products</h2>
+        <p style="font-size: 23px; margin-top: 15px; margin-bottom: 20px;">Best Choice Of 2022 Products</p>
+        <img src="brand/loreal Brand.png" style="width: 180px; height: auto; padding-bottom: 15px;">
+        <h4>L'Oréal</h4>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="loreal/f1.jpg">
+                <div class="desc">
+                    <span>Loreal</span>
+                    <h5>Loreal Extraordinary Oil (High Shine) 100ml -Pink</h5>
+                    <h4>RM 42.20
+                    </h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="loreal/f2.jpg">
+                <div class="desc">
+                    <span>Loreal</span>
+                    <h5>Loreal Extraordinary Oil (Dry Hair) 100ml -Brown</h5>
+                    <h4>RM 42.20</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="loreal/f3.jpg">
+                <div class="desc">
+                    <span>Loreal</span>
+                    <h5>Loreal Extraordinary Oil (Normal Or Dry Hair) 100ml -Gold</h5>
+                    <h4>RM 42.20</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="loreal/f4.jpg">
+                <div class="desc">
+                    <span>Loreal</span>
+                    <h5>Loreal Fall Resist 3X Hair Mask 200ml</h5>
+                    <h4>RM 29.30</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="loreal/f5.jpg">
+                <div class="desc">
+                    <span>Loreal</span>
+                    <h5>Loreal Revitalift Night Cream 50ml</h5>
+                    <h4>RM 62.30</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="loreal/f6.jpg">
+                <div class="desc">
+                    <span>Loreal</span>
+                    <h5>Loreal Revitalift Day Cream Spf23/Spf35 50ml</h5>
+                    <h4>RM 54.80</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="loreal/f7.jpg">
+                <div class="desc">
+                    <span>Loreal</span>
+                    <h5>Loreal Pro Youth Mask Brightening</h5>
+                    <h4>RM 8.20</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="loreal/f8.jpg">
+                <div class="desc">
+                    <span>Loreal</span>
+                    <h5>Loreal Revitalift Wht Anti-Wrinkle + Spot Corrector Spf18 Cream 50ml</h5>
+                    <h4>RM 41.50</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="loreal/f9.jpg">
+                <div class="desc">
+                    <span>Loreal</span>
+                    <h5>Loreal Gentle Lip & Make Up Remover 125ml</h5>
+                    <h4>RM 26.20</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="loreal/f10.jpg">
+                <div class="desc">
+                    <span>Loreal</span>
+                    <h5>Loreal Revitalift Anti Wrinkle Aqua-Milky Toner 200ml</h5>
+                    <h4>RM 41.50</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="loreal/f11.jpg">
+                <div class="desc">
+                    <span>Loreal</span>
+                    <h5>Loreal Men Expert Hydra Power Watery Foaming Gel 100ml</h5>
+                    <h4>RM 18.90</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="loreal/f12.jpg">
+                <div class="desc">
+                    <span>Loreal</span>
+                    <h5>Loreal Revitalift Laser X3 Day Cream 50ml</h5>
+                    <h4>RM 72.20</h4>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <img src="brand/blackmore brand.png" style="width: 180px; height: auto; padding-bottom: 15px;">
+        <h4>BLACKMORES</h4>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="blackmore/f1.png">
+                <div class="desc">
+                    <span>Blackmores</span>
+                    <h5>CALCIUM + D3 30S</h5>
+                    <h4>RM 33.00
+                    </h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="blackmore/f2.png">
+                <div class="desc">
+                    <span>Blackmores</span>
+                    <h5>Multivitamin + Mineral 120s</h5>
+                    <h4>RM 161.00</h4>
+                </div>
+            </div>
+
+
+            <div class="pro">
+                <img src="blackmore/f3.png">
+                <div class="desc">
+                    <span>Blackmores</span>
+                    <h5>Bio C 120s</h5>
+                    <h4>RM 155.00
+                    </h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="blackmore/f4.png">
+                <div class="desc">
+                    <span>Blackmores</span>
+                    <h5>Multivitamin 30's</h5>
+                    <h4>RM 48.00
+                    </h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="blackmore/f5.png">
+                <div class="desc">
+                    <span>Blackmores</span>
+                    <h5>Magnesium 60's</h5>
+                    <h4>RM 46.00
+                    </h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="blackmore/f6.png">
+                <div class="desc">
+                    <span>Blackmores</span>
+                    <h5>Executive B 120s</h5>
+                    <h4>RM 143.00
+                    </h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="blackmore/f7.png">
+                <div class="desc">
+                    <span>Blackmores</span>
+                    <h5>Glucosamine 1500MG 30S</h5>
+                    <h4>RM 80.00
+                    </h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="blackmore/f8.png">
+                <div class="desc">
+                    <span>Blackmores</span>
+                    <h5>Multivitamins + Minerals 60's</h5>
+                    <h4>RM 84.00
+                    </h4>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <img src="brand/Lacura Brand.jpg" style="width: 180px; height: auto; padding-bottom: 15px;">
+        <h4>LACURA</h4>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="lacura/f1.jpg">
+                <div class="desc">
+                    <span>Lacura</span>
+                    <h5>Lacura Rose Facial Oil</h5>
+                    <h4>RM 38.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="lacura/f2.jpg">
+                <div class="desc">
+                    <span>Lacura</span>
+                    <h5>Lacura Healthy Glow Glycolic Toner</h5>
+                    <h4>RM 16.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="lacura/f3.jpg">
+                <div class="desc">
+                    <span>Lacura</span>
+                    <h5>Lacura Rejuvelate Day Cream</h5>
+                    <h4>RM 20.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="lacura/f4.jpg">
+                <div class="desc">
+                    <span>Lacura</span>
+                    <h5>Snapshot Ready Foundation Primer</h5>
+                    <h4>RM 38.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="lacura/f5.jpg">
+                <div class="desc">
+                    <span>Lacura</span>
+                    <h5>Lacura Acacia Collagen Tonic</h5>
+                    <h4>RM 23.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="lacura/f6.jpg">
+                <div class="desc">
+                    <span>Lacura</span>
+                    <h5>Lacura Glycolic Serum</h5>
+                    <h4>RM 33.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="lacura/f7.jpg">
+                <div class="desc">
+                    <span>Lacura</span>
+                    <h5>Lacura Vitamin C Hot Cloth Cleanser</h5>
+                    <h4>RM 22.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="lacura/f8.jpg">
+                <div class="desc">
+                    <span>Lacura</span>
+                    <h5>Lacura Moisturising Face Wash</h5>
+                    <h4>RM 5.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="lacura/f9.jpg">
+                <div class="desc">
+                    <span>Lacura</span>
+                    <h5>Lacura Caviar Illumination Day Cream</h5>
+                    <h4>RM 40.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="lacura/f10.jpg">
+                <div class="desc">
+                    <span>Lacura</span>
+                    <h5>Lacura Foot Scrub</h5>
+                    <h4>RM 27.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="lacura/f11.jpg">
+                <div class="desc">
+                    <span>Lacura</span>
+                    <h5>SensatioNail Gel Nail Kit Red/Black</h5>
+                    <h4>RM 48.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="lacura/f12.jpg">
+                <div class="desc">
+                    <span>Lacura</span>
+                    <h5>Lacura Pink Clay Dual Mask</h5>
+                    <h4>RM 40.00</h4>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <img src="brand/biore brand.png" style="width: 180px; height: auto; padding-bottom: 15px;">
+        <h4>BIORE'</h4>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="biore/f1.png">
+                <div class="desc">
+                    <span>Biore</span>
+                    <h5>UV Aqua Rich Watery Essence SPF50+ Sunscreen 50g</h5>
+                    <h4>RM 35.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="biore/f2.png">
+                <div class="desc">
+                    <span>Biore</span>
+                    <h5>UV Perfect Milk Cool SPF50+ Daily Sunscreen 25ml</h5>
+                    <h4>RM 19.80</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="biore/f3.png">
+                <div class="desc">
+                    <span>Biore</span>
+                    <h5>UV Perfect Milk Moisture SPF 50+ Sunscreen 25ml</h5>
+                    <h4>RM 19.80</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="biore/f4.png">
+                <div class="desc">
+                    <span>Biore</span>
+                    <h5>Cleansing Oil 150ml</h5>
+                    <h4>RM 24.30</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="biore/f5.png">
+                <div class="desc">
+                    <span>Biore</span>
+                    <h5>Cleansing Strips Pore Pack Black 10's</h5>
+                    <h4>RM 14.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="biore/f6.png">
+                <div class="desc">
+                    <span>Biore</span>
+                    <h5>Skin Caring Facial Foam Scrub 130g</h5>
+                    <h4>RM 24.39</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="biore/f7.jpg">
+                <div class="desc">
+                    <span>Biore</span>
+                    <h5>Skin Caring Facial Foam Moisture 130g</h5>
+                    <h4>RM 24.39</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="biore/f8.png">
+                <div class="desc">
+                    <span>Biore</span>
+                    <h5>UV Perfect Face Milk SPF50+ Daily Sunscreen 30ml</h5>
+                    <h4>RM 31.95</h4>
+                </div>
+            </div>
+        </div>
+        
+        <br>
+        <hr>
+        <br>
+
+        <img src="brand/Bio-life brand.png" style="width: 180px; height: auto; padding-bottom: 15px;">
+        <h4>BIO-LIFE</h4>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="bio-life/f1.png">
+                <div class="desc">
+                    <span>Bio-Life</span>
+                    <h5>Calcium & Magnesium Plus 30's</h5>
+                    <h4>RM 27.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="bio-life/f2.png">
+                <div class="desc">
+                    <span>Bio-Life</span>
+                    <h5>Non Acidic Vitamin C & Bioflavonoids 30's</h5>
+                    <h4>RM 48.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="bio-life/f3.jpg">
+                <div class="desc">
+                    <span>Bio-Life</span>
+                    <h5>Nat B Fizzy 10s X 2</h5>
+                    <h4>RM41.90</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="bio-life/f4.png">
+                <div class="desc">
+                    <span>Bio-Life</span>
+                    <h5>Glucosamine 100's + 2 x 30's</h5>
+                    <h4>RM67.95</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="bio-life/f5.png">
+                <div class="desc">
+                    <span>Bio-Life</span>
+                    <h5>A.B. Pre- & Pro-biotics 10 x 2.3g</h5>
+                    <h4>RM26.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="bio-life/f6.png">
+                <div class="desc">
+                    <span>Bio-Life</span>
+                    <h5>Bio-Zinc Complex 100s</h5>
+                    <h4>RM51.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="bio-life/f7.png">
+                <div class="desc">
+                    <span>Bio-Life</span>
+                    <h5>Saw Palmetto & Pumpkin Seed 100S</h5>
+                    <h4>RM132.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="bio-life/f8.png">
+                <div class="desc">
+                    <span>Bio-Life</span>
+                    <h5>Mega-C Plus Bioflavonoid 30's</h5>
+                    <h4>RM55.00</h4>
+                </div>
+            </div>
+        </div>
+                
+        <br>
+        <hr>
+        <br>
+
+        <img src="brand/scott Brand.jpg" style="width: 180px; height: auto; padding-bottom: 15px;">
+        <h4>SCOTT'S</h4>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="scott/F1.png">
+                <div class="desc">
+                    <span>SCOTT'S</span>
+                    <h5>Scotts Emulsion Orange 200ml</h5>
+                    <h4>RM 11.80</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="scott/F2.png">
+                <div class="desc">
+                    <span>SCOTT'S</span>
+                    <h5>Scotts Multivitamin Gummies Tropical 60S</h5>
+                    <h4>RM 46.50</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="scott/F3.png">
+                <div class="desc">
+                    <span>SCOTT'S</span>
+                    <h5>Scotts Multivitamin Gummies Apple 60S</h5>
+                    <h4>RM 46.50</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="scott/F4.png">
+                <div class="desc">
+                    <span>SCOTT'S</span>
+                    <h5>Scotts DHA Gummies Blackcurrant 15s</h5>
+                    <h4>RM 67.50</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="scott/F5.png">
+                <div class="desc">
+                    <span>SCOTT'S</span>
+                    <h5>Scotts Vitamin C Blackcurrant Pastilles 50's</h5>
+                    <h4>RM 19.10</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="scott/F6.png">
+                <div class="desc">
+                    <span>SCOTT'S</span>
+                    <h5>Scotts DHA Gummies Strawberry 15's</h5>
+                    <h4>RM 11.30</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="scott/F7.png">
+                <div class="desc">
+                    <span>SCOTT'S</span>
+                    <h5>Scotts DHA Gummies Orange 60's</h5>
+                    <h4>RM 32.00</h4>
+                </div>
+            </div>
+
+            <div class="pro">
+                <img src="scott/F8.png">
+                <div class="desc">
+                    <span>SCOTT'S</span>
+                    <h5>Scotts Fish Oil 1000mg 60s</h5>
+                    <h4>RM 43.80</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Disclaimer Website (For Education Purpose Only)- Sanitas Marketing Sdn Bhd</p>
+        <img src="images/logo.png" class="logo">
+    </footer>
+</body>
+</html>
